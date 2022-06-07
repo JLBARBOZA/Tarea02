@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <title>Tus Poemas</title>
+        <meta charset="UTF-8">
+        <meta name="descripcion" content="Pagina principal de TusPoemas">
+        <meta name="keywords" content="htlm5, css, TusPoemas">
+        <link href="css/Menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="logo nav-link">Tus Poemas</a>
+                <ul>
+                    <li><a class="nav-link" href="informacion.html">Informacion</a></li>
+                    <li><a  class="nav-link" href="frecuentes.html">Preguntas frecuentes</a></li>
+                    <li><a  class="nav-link" href="reportes.html">Reportes</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <h2>Poemas mas leidos</h2>
+            <p>Poemas para el alma</p>
+        </aside>
+        <section>
+            <br/>
+            <br/>
+            <h2>Bienvenidos</h2>
+            <hr/>
+            <article>
+                <header><h3>Tipos de input</h3></header>
+                <hr>
+                <form action="confirmacion.jsp" method="POST">
+                    <fieldset>
+                        <legend>Datos del usuario</legend>
+                        <label>Nombre de usuario</label>
+                        <input type="text" value="" required/>
+                        <br/>
+                        <label>Correo electronico:</label>
+                        <input type="email" name="correo" placeholder="sucorreo@xxxx.xxx"/>
+                        <br/>
+                        <label>Celular(opcional):</label>
+                        <input type="tel" name="telefono" required placeholder="1111-1111"/> 
+                        <br/>
+                    </fieldset>
+
+                    <fieldset>
+
+                        <label>Reporte seleccionado:</label>
+                        <input type="checkbox" name="No cargan"/>No cargan las paginas
+                        <input type="checkbox" name="Bug"/>Bug
+                        <input type="checkbox" name="Desorden"/>Pagina desordenada
+                        <br/>
+                        <label>Descripcion del reporte</label>
+                        <input type="text" value="" required/>
+                        <br/>
+
+                        <label>Fecha del reporte</label>
+                        <input type="date" name="FechaIngre"/>
+                        <br/>
+
+                        <label>Screenshot del problema si fuese necesario:</label>
+                        <input type="file" name="foto"/>
+                        <br/>
+                        <label>Borrar todo:</label>
+                        <input type="reset" name="Borrar todo"/>
+                        <br/>
+                    </fieldset>
+                    <label>Enviar reporte</label>
+                    <input type="submit" value="Enviar"/>
+                    <br/>
+
+
+                </form>
+
+            </article>
+  
+            
+        </section>
+        <footer>
+            <hr/>
+            Sitio desarrollado en el curso Web y Patrones 2022 &COPY; 
+            <hr/>
+        </footer>
+        
+    </body>
+    
+</html>
